@@ -206,6 +206,7 @@ ul {
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+    margin-bottom: 20px;
 }
 
 .input-area textarea {
