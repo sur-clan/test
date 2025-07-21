@@ -1,8 +1,13 @@
 html, body {
-
-  height: 100dvh; /* modern CSS: dynamic viewport height */
+  height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
 
   
 
@@ -24,12 +29,11 @@ background: url('castle-sur.png') no-repeat center center fixed;
 
 
 .content {
-  position: relative;
-  z-index: 2;
-display: flex;
+  display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
+
 
 
 
@@ -57,13 +61,10 @@ main {
 }
 
 .page {
-flex: 1;
-display: none;
+  flex: 1;
+  display: none;
   flex-direction: column;
-   min-height: 0; /* this line is VERY important in flexbox */
-  padding: 0 1rem 1rem; /* top right/left bottom */
-  box-sizing: border-box;
-
+  min-height: 0;
 }
 
 .page.active {
